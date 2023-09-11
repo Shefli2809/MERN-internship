@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7 CSS</title>
+    <style>
+        body{
+            background-color: #a22b55;
+            font-family: Arial;
+        }
+        .container{
+            width: 40%;
+            background-color: #75203f;
+            color: #fde5f8;
+            padding: 3rem;
+        }
+        input[type=submit]{
+            width: 55%;
+            height: 2.5rem;
+            background-color: white;
+            color:#46312f;
+            font-weight: bolder;
+            font-size: large;
+            border: none;
+            border-radius: 5px;
+        }
+        input[type=text], input[type=email], input[type=number], input[type=password]{
+            width: 12rem;
+        }
+        textarea{
+            width: 12rem;
+            font-family: Arial;
+            height: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <a href="./index.html" style="color: white;"><- Back</a>
+    <center>
+        <div class="container">
+            <form action="">
+                <table cellspacing="12">
+                    <tr>
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" name="name" placeholder="your name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" name="email" placeholder="your email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pswd">Password:</label></td>
+                        <td><input type="password" name="pswd"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phn">Phone Number:</label></td>
+                        <td><input type="number" name="phn"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gen">Gender</label></td>
+                        <td>
+                            Male: <input type="radio" name="gen">
+                            Female: <input type="radio" name="gen">
+                            Other: <input type="radio" name="gen">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="lang">Language</label></td>
+                        <td>
+                            <select name="lang" id="">
+                                <option value="" selected disabled>Select language</option>
+                                <option value="eng">English</option>
+                                <option value="hin">Hindi</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="zip">Zip Code:</label></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="about">About:</label></td>
+                        <td><textarea name="about" cols="20" rows="20" placeholder="Write about yourself..."></textarea></td>
+                    </tr>
+                </table>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </center>
+    
+    
+</body>
+</html>

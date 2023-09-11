@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 CSS</title>
+    <style>
+        p{
+            font-family: calibri;
+            font-weight: bold;
+        }
+        .navbar{
+            border-width: 10px 7px 0px;
+            border-color:white;
+            border-style: solid;
+            outline: black solid 1px;
+            border-bottom: none;
+            list-style-type:none;
+            background-color: #add9e6;
+            padding: 0px;
+            margin-left: 20px;
+            width: 30%
+        }
+        .navbar li{
+            padding: 10px;
+        }
+        .navbar li:hover{
+            background-color: orange;
+        }
+        a{
+            color: blue;
+            text-decoration: none;
+            width: 30%;
+        }
+        a:visited{
+            color: blue;
+        }
+        a:hover{
+            color: white;
+        }
+        .navbar2{
+            width: 40%;
+            position: absolute;
+            right: 2rem;
+            top: 170px;
+            border-width: 7px 0px 7px 5px;
+            border-color:white;
+            border-style: solid;
+            outline: black solid 1px;
+            background-color: #d3d3d3;
+        }
+        .navbar2 td{
+            border-right: 1px solid blue;
+            text-align: center;
+            padding: 0.3rem;
+        }
+        .navbar2 td:hover{
+            background-color: #80807f;
+        }
+    </style>
+</head>
+<body>
+    <a href="./index.html"><- Back</a>
+    <br><br>
+    <p style="position: absolute; left: 4.5rem; top: 45px;">Vertical Navigation Bar</p>
+    <br><br>
+    <ul class="navbar">
+        <a href=""><li>Home</li></a>
+        <a href=""><li>Java</li></a>
+        <a href=""><li>CSS</li></a>
+        <a href=""><li>HTML</li></a>
+        <a href="" ><li>Bootstrap</li></a>
+    </ul> 
+    
+    <p style="position: absolute; right: 7rem; top: 110px;">Horizontal Navigation Bar</p>
+    <table class="navbar2" cellspacing="0">
+        <tr>
+            <td><a href="">Home</a></td>
+            <td><a href="">Java</a></td>
+            <td><a href="">HTML</a></td>
+            <td><a href="">CSS</a></td>
+            <td width="50rem" style="border-right: none;"><a href=""></a></td>
+        </tr>
+        
+    </ul>
+</body>
+</html>

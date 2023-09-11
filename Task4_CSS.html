@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 4 CSS</title>
+  <style>
+    #nav {
+      list-style-type: none;
+    }
+    #nav a {
+      position: absolute;
+      left: -80px;
+      transition: 0.3s;
+      padding: 15px;
+      width: 100px;
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+      border-radius: 0 5px 5px 0;
+    }
+
+    #nav a:hover {
+      left: 0;
+    }
+
+    #about {
+      top: 40px;
+      background-color: #04AA6D;
+    }
+
+    #blog {
+      top: 100px;
+      background-color: #2196F3;
+    }
+
+    #projects {
+      top: 160px;
+      background-color: #f44336;
+    }
+
+    #contact {
+      top: 220px;
+      background-color: #555
+    }
+
+    #txt {
+      margin-left: 100px;
+    }
+  </style>
+</head>
+<body>
+    <a href="./index.html" style="font-family: 'Times New Roman', Times, serif;"><- Back</a>
+    <br><br>
+    <ul id="nav" class="nav">
+        <a href="#" id="about">About</a>
+        <a href="#" id="blog">Blog</a>
+        <a href="#" id="projects">Projects</a>
+        <a href="#" id="contact">Contact</a>
+    </ul>
+    <div id="txt">
+      <h1>Hoverable Sidenav Buttons</h1>
+      <p>Hover over the buttons in the left side navigation to open them.</p>
+    </div>
+    
+</body>
+</html>

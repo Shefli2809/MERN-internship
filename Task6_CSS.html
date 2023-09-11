@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6 CSS</title>
+    <style>
+        body{ 
+            font-family:Verdana;
+        }
+        .container{
+            padding: 1rem;
+            width: 40%;
+        }
+        label{
+            position: relative;
+            left: -14.5rem;
+            margin: 0.3rem;
+        }
+        input[type=text], input[type=password], input[type=submit]{
+            width: 90%;
+            height: 2rem;
+            margin:0.5rem;
+        }
+        input[type=text], input[type=password]{
+            border: 1px solid #c4baba;
+        }
+        img{
+            margin: 0.5rem;
+            border-radius: 50%;
+            height: 15rem;
+        }
+        .login{
+            background-color: #4cb050;
+            color: white;
+            border: none;
+            border-radius: 1%;
+            padding: 0.4rem;
+            font-weight: bold;
+        }
+        .cancel{
+            background-color: #f73f36;
+            font-weight: bold;
+            color: white;
+            border: none;
+            position: relative;
+            border-radius: 10%;
+            height: 2rem;
+            width: 4rem;
+            left: -10.5rem;
+            padding: 0.4rem;
+        }
+        input[type=checkbox], label[for=chk]{
+            position: relative;
+            left: -12.5rem;
+        }
+        span{
+            position: relative;
+            right: -10.5rem;
+        }
+        .cont{
+            width: 90%;
+            padding-top : 1rem;
+            padding-bottom: 0.5rem;
+            border-top: 1px solid #c4baba;
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <a href="./index.html"><- Back</a>
+    <br><br>
+    <center>
+        <div class="container">
+            <img src="./avtar.png" alt="AVATAR">
+            <form action="">
+            <label for="uname"><b>Username</b></label>
+            <br>
+            <input type="text" name="uname" placeholder="Enter Username">
+            <br>
+            <label for="pswd"><b>Password</b></label>
+            <br>
+            <input type="password" name="pswd" placeholder="Enter Password">
+            <br>
+            <input type="submit" value="Login" class="login">
+            <br>
+            <input type="checkbox" name="chk">
+            <label for="chk">Remember me</label>
+            <br><br>
+            <div class="cont">
+                <input type="button" value="Cancel" class="cancel">
+                <span>Forgot <a href="">password?</a></span>
+            </div>
+        </form>
+        </div>
+    </center>
+</body>
+</html>
